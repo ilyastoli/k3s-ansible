@@ -26,7 +26,7 @@ Master and nodes must have passwordless SSH access
 First create a new directory based on the `sample` directory within the `inventory` directory:
 
 ```bash
-cp -R inventory/sample inventory/my-cluster
+cp -R inventory/sample inventory/drupelet
 ```
 
 Second, edit `inventory/my-cluster/hosts.ini` to match the system information gathered above. For example:
@@ -48,7 +48,7 @@ If needed, you can also edit `inventory/my-cluster/group_vars/all.yml` to match 
 Start provisioning of the cluster using the following command:
 
 ```bash
-ansible-playbook site.yml -i inventory/my-cluster/hosts.ini
+ansible-playbook site.yml -i inventory/drupelet/hosts.ini
 ```
 
 ## Kubeconfig
