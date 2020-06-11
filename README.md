@@ -29,7 +29,7 @@ First create a new directory based on the `sample` directory within the `invento
 cp -R inventory/sample inventory/drupelet
 ```
 
-Second, edit `inventory/my-cluster/hosts.ini` to match the system information gathered above. For example:
+Second, edit `inventory/drupelet/hosts.ini` to match the system information gathered above. For example:
 
 ```bash
 [master]
@@ -43,7 +43,7 @@ master
 node
 ```
 
-If needed, you can also edit `inventory/my-cluster/group_vars/all.yml` to match your environment.
+If needed, you can also edit `inventory/drupelet/group_vars/all.yml` to match your environment.
 
 Start provisioning of the cluster using the following command:
 
